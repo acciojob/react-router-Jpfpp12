@@ -6,19 +6,17 @@ import Navigation from './Navigation';
 
 function App() {
   return (
-    <div>
-     {/* Do not remove the main div */}
     <Router>
-      <Navigation />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
+      <div>
+        {/* Do not remove the main div */}
+        <Navigation />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </div>
     </Router>
-  </div>
   );
 }
 
 export default App;
-
-
